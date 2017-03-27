@@ -5,7 +5,7 @@
 
 ##ScreenShots  
 
-<img src="https://github.com/zhujian1989/gank.io/blob/master/screenshots/1.png" width="200"> <img src="https://github.com/zhujian1989/gank.io/blob/master/screenshots/2.png" width="200"> <img src="https://github.com/zhujian1989/gank.io/blob/master/screenshots/3" width="200">
+<img src="https://github.com/zhujian1989/gank.io/blob/master/screenshots/1.png" width="200"> <img src="https://github.com/zhujian1989/gank.io/blob/master/screenshots/2.png" width="200"> <img src="https://github.com/zhujian1989/gank.io/blob/master/screenshots/3.png" width="200">
   
 ## 核心思想
 整体采取MVP架构，学习了下uncle bob的clean code思想，在项目中做了一些实践，还在不断完善中

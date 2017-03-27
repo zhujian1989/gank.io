@@ -19,7 +19,7 @@ rxandroid
 butterknife  
 arouter  
 (朋友的库，欢迎大家去体验)  
-bga-refreshlayout  　ß
+bga-refreshlayout  
 bga-adapter   
    
 ## 关于我

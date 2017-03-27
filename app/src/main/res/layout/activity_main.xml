@@ -14,8 +14,6 @@
     <android.support.design.widget.TabLayout
             android:id="@+id/tabLayout"
             style="@style/MyCustomTabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="53dp"
             android:layout_alignParentBottom="true"/>
 
 

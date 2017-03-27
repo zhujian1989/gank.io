@@ -1,7 +1,17 @@
 ## gank.io
-感谢http://gank.io提供的api帮助完成这个app  
+感谢 http://gank.io 提供的api帮助完成这个app  
 该项目完全开源，单纯为了学习与交流，希望大家喜欢，多多提意见。  
 后续会将未来学到的新的技术或者框架运用到该项目，持续更新
+##screebshots
+<p align="center">
+  <img src="https://github.com/zhujian1989/gank.io/blob/master/screenshots/device-2017-03-27-130931.png" width="450">
+</p>
+<p align="center">
+  <img src="https://github.com/zhujian1989/gank.io/blob/master/screenshots/device-2017-03-27-130959.png" width="450">
+</p>
+<p align="center">
+  <img src="https://github.com/zhujian1989/gank.io/blob/master/screenshots/device-2017-03-27-131009.png" width="450">
+</p>
 ## 核心思想
 整体采取MVP架构，学习了下uncle bob的clean code思想，在项目中做了一些实践，还在不断完善中
 ## 使用到的主流第三方库
@@ -13,7 +23,7 @@ rxandroid
 butterknife  
 arouter  
 (朋友的库，欢迎大家去体验)  
-bga-refreshlayout  
+bga-refreshlayout  　ß
 bga-adapter   
    
 ## 关于我

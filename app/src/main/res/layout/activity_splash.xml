@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/MatchMatch"
+        android:fitsSystemWindows="true"
+        android:background="@drawable/round_corner_stroke_white"
+>
+
+    <ImageView
+            android:id="@+id/img"
+            style="@style/MatchMatch"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/bg"
+    />
+</RelativeLayout>

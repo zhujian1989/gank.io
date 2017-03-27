@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <com.jzhu.io.gank.ui.widget.TitleBar
+        android:id="@+id/title_bar"
+        style="@style/MatchWrap"
+        app:title_bar_left_icon="@mipmap/ic_chevron_left_white_36dp"                android:text="@string/string_place_holder"
+    />
+
+    <com.jzhu.io.gank.ui.widget.LJWebView
+        style="@style/MatchMatch"
+        android:id="@+id/webview"
+         />
+
+</LinearLayout>

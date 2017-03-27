@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              style="@style/MatchMatch.Vertical"
+              android:fitsSystemWindows="true"
+>
+    <com.jzhu.io.gank.ui.widget.TitleBar
+            style="@style/MatchWrap"
+            android:id="@+id/title_bar"
+            app:title_bar_title="@string/tab_fl"/>
+
+    <cn.bingoogolapple.refreshlayout.BGARefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                      android:id="@+id/refreshLayout"
+                                                      style="@style/MatchMatch">
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+    </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+
+
+
+</LinearLayout>

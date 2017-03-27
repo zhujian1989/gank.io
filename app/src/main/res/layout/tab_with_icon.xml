@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              style="@style/MatchWrap.Horizontal">
+    <ImageView
+            android:id="@+id/icon"
+            style="@style/WrapWrap"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:adjustViewBounds="true"/>
+    <TextView
+            android:id="@+id/title"
+            style="@style/MatchWrap"
+            android:textSize="@dimen/f2"
+            android:textColor="@drawable/selector_tab_txt"
+            android:gravity="center_horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/C1</color>
+    <color name="colorPrimaryDark">@color/C1</color>
+    <color name="colorAccent">@color/C1</color>
+    <color name="colorText">@color/common_white</color>
+
+    <color name="C1">@color/C10</color>
+    <color name="C2">#FFFEFE</color>
+    <color name="C3">#fafafa</color>
+    <color name="C4">#d1d1d1</color>
+    <color name="C5">#2f3641</color>
+    <color name="C6">#333333</color>
+    <color name="C7">#8E8E93</color>
+    <color name="C8">#FFB142</color>
+    <color name="C9">#B00905</color>
+    <color name="C10">#2dbc6d</color>
+    <color name="C11">#f2f2f2</color>
+    <color name="C12">#666666</color>
+    <color name="C13">#999999</color>
+    <color name="C14">#cc140f</color>
+    <color name="C15">#f4504c</color>
+    <color name="C16">#3daba5</color>
+
+    <color name="common_white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="float_icon_bg">#80000000</color>
+
+
+
+    <drawable name="transparent_background">#00000000</drawable>
+
+
+</resources>

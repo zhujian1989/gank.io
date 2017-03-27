@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@mipmap/bg"
+        style="@style/MatchMatch">
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            style="@style/MatchMatch"
+            android:layout_above="@+id/tabLayout"
+    />
+
+
+    <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout"
+            style="@style/MyCustomTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_alignParentBottom="true"/>
+
+
+    <com.jzhu.io.gank.ui.widget.FloatingLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/float_icon_bg"
+                android:padding="12dp"
+                android:src="@mipmap/ic_local_cafe_white_24dp"/>
+
+    </com.jzhu.io.gank.ui.widget.FloatingLayout>
+
+</RelativeLayout>

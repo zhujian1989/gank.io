@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Gank.io</string>
+
+    <string name="string_place_holder">--</string>
+
+    <!-- tab -->
+    <string name="tab_android">Android</string>
+    <string name="tab_ios">iOS</string>
+    <string name="tab_fl">福利</string>
+
+    <string name="common_jump">跳过</string>
+
+    <!-- about -->
+    <string name="about">关于</string>
+    <string name="about_name">Jzhu，快乐的程序猿，热衷撸代码</string>
+    <string name="about_thanks">感谢http://gank.io提供的api帮助完成这个app</string>
+    <string name="about_app">该项目完全开源，单纯为了学习与交流，希望大家喜欢，多多提意见。后续会将未来学到的新的技术或者框架运用到该项目，持续更新</string>
+    <string name="about_github_link"><a href='https://github.com/zhujian1989/gank.io'>App源码地址</a></string>
+    <string name="about_think">核心思想</string>
+    <string name="about_think_intro">整体采取MVP架构，学习了下uncle bob的clean code思想，在项目中做了一些实践，还在不断完善中</string>
+    <string name="about_thirdparts">使用到的主流第三方库</string>
+    <string name="about_thirdparts_list">dagger2\nretrofit2\nokhttp3\nglide\nrxandroid\nbutterknife\narouter\nbga-refreshlayout\nbga-adapter(朋友的库，欢迎大家去体验)</string>
+    <string name="about_contact">联系方式</string>
+    <string name="about_contact_intro">QQ：370159662\n微信：yangcong_370159662</string>
+    <string name="about_award">打赏支持</string>
+    <string name="about_award_intro">如果觉得项目开源代码对您有用，请随意打赏。</string>
+    <string name="about_hide">点击查看隐藏功能，获得开发的洪荒之力</string>
+
+</resources>

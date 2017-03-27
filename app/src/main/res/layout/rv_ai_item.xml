@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        style="@style/MatchWrap"
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="@dimen/common_margin"
+        android:layout_marginLeft="@dimen/common_margin"
+        android:background="@color/common_white"
+>
+    <RelativeLayout style="@style/MatchWrap"
+                    android:padding="@dimen/common_margin"
+
+    >
+
+        <ImageView
+                android:id="@+id/image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                style="@style/WrapWrap"
+                android:scaleType="centerCrop"
+        />
+
+        <TextView
+                android:id="@+id/title"
+                style="@style/WrapWrap"
+                android:layout_alignTop="@+id/image"
+                android:layout_toRightOf="@+id/image"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="@string/string_place_holder"
+                android:textSize="@dimen/f6"
+                android:gravity="left"
+                android:textColor="@color/C6"
+                android:layout_marginLeft="@dimen/common_margin"
+
+
+        />
+        <ImageView
+                android:id="@+id/line"
+                style="@style/custom_line_h_style_c12"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/image"
+                android:layout_marginBottom="8dp"
+        />
+
+        <TextView
+                android:id="@+id/name"
+                android:layout_below="@+id/line"
+                style="@style/WrapWrap"
+                android:layout_alignParentLeft="true"
+                android:textSize="@dimen/f4"
+                android:text="@string/string_place_holder"
+                android:textColor="@color/C12"
+        />
+
+        <TextView
+                android:id="@+id/date"
+                style="@style/WrapWrap"
+                android:layout_below="@+id/line"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/f4"
+                android:text="@string/string_place_holder"
+                android:textColor="@color/C12"
+        />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>
+
+
+

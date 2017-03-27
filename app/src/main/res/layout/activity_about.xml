@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              style="@style/MatchMatch.Vertical"
+              android:background="@color/C11"
+              android:fitsSystemWindows="true"
+>
+    <com.jzhu.io.gank.ui.widget.TitleBar
+            android:id="@+id/title_bar"
+            style="@style/MatchWrap"
+            app:title_bar_left_icon="@mipmap/ic_chevron_left_white_36dp"
+            app:title_bar_title="@string/about"
+    />
+
+    <ScrollView
+            style="@style/MatchMatch"
+            android:layout_below="@+id/title_bar">
+
+        <LinearLayout
+                style="@style/MatchMatch.Vertical"
+                android:orientation="vertical">
+
+            <android.support.v7.widget.CardView style="@style/MatchWrap"
+                                                app:cardCornerRadius="10dp"
+                                                android:layout_margin="@dimen/common_margin"
+                                                android:background="@color/common_white"
+            >
+
+                <LinearLayout style="@style/MatchWrap.Vertical"
+                android:padding="@dimen/common_margin"
+                >
+
+                    <TextView style="@style/WrapWrap"
+                              android:gravity="left"
+                              android:text="@string/about_name"
+                              android:textColor="@color/C6"
+                              android:textSize="@dimen/f6"
+                    />
+
+                    <ImageView style="@style/custom_line_h_style_c12"
+                    android:layout_marginTop="16dp"
+                               android:layout_marginBottom="8dp"
+                    />
+
+                    <TextView style="@style/WrapWrap"
+                              android:gravity="left"
+                              android:text="@string/about_thanks"
+                              android:textColor="@color/C6"
+                              android:textSize="@dimen/f4"
+                    />
+
+                    <TextView style="@style/WrapWrap"
+                              android:gravity="left"
+                              android:text="@string/about_app"
+                              android:textColor="@color/C12"
+                              android:textSize="@dimen/f3"
+                              android:layout_marginTop="8dp"
+                    />
+
+
+                    <TextView
+                            android:id="@+id/source"
+                            style="@style/WrapWrap"
+                              android:gravity="left"
+                              android:text="@string/about_github_link"
+                              android:textColor="@color/C1"
+                              android:textSize="@dimen/f6"
+                              android:layout_marginTop="8dp"
+                    />
+
+                    <ImageView style="@style/custom_line_h_style_c12"
+                               android:layout_marginTop="16dp"
+                               android:layout_marginBottom="8dp"
+                    />
+
+                    <TextView style="@style/WrapWrap"
+                              android:gravity="left"
+                              android:text="@string/about_think"
+                              android:textColor="@color/C6"
+                              android:textSize="@dimen/f4"
+                    />
+
+                    <TextView style="@style/WrapWrap"
+                              android:gravity="left"
+                              android:text="@string/about_think_intro"
+                              android:textColor="@color/C12"
+                              android:textSize="@dimen/f3"
+                              android:layout_marginTop="8dp"
+                    />
+
+                    <ImageView style="@style/custom_line_h_style_c12"
+                               android:layout_marginTop="16dp"
+                               android:layout_marginBottom="8dp"
+                    />
+                    <TextView style="@style/WrapWrap"
+                              android:gravity="left"
+                              android:text="@string/about_thirdparts"
+                              android:textColor="@color/C6"
+                              android:textSize="@dimen/f6"
+                    />
+
+                    <TextView style="@style/WrapWrap"
+                              android:gravity="left"
+                              android:text="@string/about_thirdparts_list"
+                              android:textColor="@color/C12"
+                              android:textSize="@dimen/f3"
+                              android:layout_marginTop="8dp"
+                    />
+                    <ImageView style="@style/custom_line_h_style_c12"
+                               android:layout_marginTop="16dp"
+                               android:layout_marginBottom="8dp"
+                    />
+
+                    <TextView style="@style/WrapWrap"
+                              android:gravity="left"
+                              android:text="@string/about_contact"
+                              android:textColor="@color/C6"
+                              android:textSize="@dimen/f6"
+                    />
+
+                    <TextView style="@style/WrapWrap"
+                              android:gravity="left"
+                              android:text="@string/about_contact_intro"
+                              android:textColor="@color/C12"
+                              android:textSize="@dimen/f3"
+                              android:layout_marginTop="8dp"
+                    />
+                    <ImageView style="@style/custom_line_h_style_c12"
+                               android:layout_marginTop="16dp"
+                               android:layout_marginBottom="8dp"
+                    />
+
+                    <TextView
+                            android:id="@+id/hide_fun"
+                            style="@style/MatchWrap"
+                              android:gravity="left"
+                              android:text="@string/about_hide"
+                              android:textColor="@color/C6"
+                              android:textSize="@dimen/f6"
+                    />
+
+                    <TextView
+                            android:id="@+id/about_award_intro"
+                            style="@style/WrapWrap"
+                              android:gravity="left"
+                              android:text="@string/about_award_intro"
+                              android:textColor="@color/C12"
+                              android:textSize="@dimen/f3"
+                            android:visibility="gone"
+                            android:layout_marginTop="8dp"
+                    />
+
+                    <ImageView
+                            android:id="@+id/wxpay"
+                            style="@style/WrapWrap"
+                            android:visibility="gone"
+                    android:src="@mipmap/qrcode_wxpay"
+                    />
+
+                    <ImageView
+                            android:id="@+id/alipay"
+                            style="@style/WrapWrap"
+                            android:visibility="gone"
+                            android:src="@mipmap/qrcode_alipay"
+                    />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.WithoutActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- title bar begin-->
+    <style name="title_bar_title_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/f7</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="title_bar_subtext_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/title_bar_subtitle_padding_lr</item>
+        <item name="android:paddingRight">@dimen/title_bar_subtitle_padding_lr</item>
+        <item name="android:paddingTop">@dimen/title_bar_subtitle_padding_tb</item>
+        <item name="android:paddingBottom">@dimen/title_bar_subtitle_padding_tb</item>
+        <item name="android:textSize">@dimen/f3</item>
+        <item name="android:textColor">@color/common_white</item>
+    </style>
+    <style name="title_bar_icon_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/title_bar_subtitle_padding_lr</item>
+        <item name="android:paddingRight">@dimen/title_bar_subtitle_padding_lr</item>
+        <item name="android:paddingTop">@dimen/title_bar_subtitle_padding_tb</item>
+        <item name="android:paddingBottom">@dimen/title_bar_subtitle_padding_tb</item>
+    </style>
+    <style name="title_bar_bullet_style">
+        <item name="android:layout_width">@dimen/title_bar_bullet_wh</item>
+        <item name="android:layout_height">@dimen/title_bar_bullet_wh</item>
+        <item name="android:textSize">@dimen/f0</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bullet_bg</item>
+        <item name="android:layout_marginRight">@dimen/title_bar_bullet_margin_right</item>
+        <item name="android:layout_marginTop">@dimen/title_bar_bullet_margin_top</item>
+    </style>
+    <style name="title_bar_left_bullet_style">
+        <item name="android:layout_width">@dimen/title_bar_left_bullet_wh</item>
+        <item name="android:layout_height">@dimen/title_bar_left_bullet_wh</item>
+        <item name="android:textSize">@dimen/f0</item>
+        <item name="android:textColor">@color/common_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bullet_bg</item>
+        <item name="android:layout_marginRight">@dimen/title_bar_left_bullet_margin_right</item>
+        <item name="android:layout_marginTop">@dimen/title_bar_left_bullet_margin_top</item>
+    </style>
+    <declare-styleable name="title_bar_style">
+        <attr name="title_bar_title" format="reference" />
+        <attr name="title_bar_left_subtext" format="reference" />
+        <attr name="title_bar_right_subtext" format="reference" />
+        <attr name="title_bar_left_icon" format="reference" />
+        <attr name="title_bar_right_icon" format="reference" />
+    </declare-styleable>
+    <!-- title bar end-->
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">0dp</item>
+        <item name="tabSelectedTextColor">@color/common_white</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabTextColor">@color/C6</item>
+        <item name="tabBackground">@color/transparent</item>
+    </style>
+
+
+    <style name="custom_line_h_style_c12">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/C12</item>
+    </style>
+
+</resources>

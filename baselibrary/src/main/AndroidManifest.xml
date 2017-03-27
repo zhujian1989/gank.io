@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+          package="com.jzhu.io.baselibrary"
+>
+
+    <application android:allowBackup="true"
+                 android:label="@string/app_name"
+                 android:supportsRtl="true"
+    >
+        <meta-data
+                android:name="com.jzhu.io.baselibrary.utils.glide.CusGlideModule"
+                android:value="GlideModule" />
+    </application>
+
+</manifest>

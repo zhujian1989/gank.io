@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import butterknife.BindView;
+import cn.bingoogolapple.androidcommon.adapter.BGADivider;
 import cn.bingoogolapple.refreshlayout.BGANormalRefreshViewHolder;
 import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
 import cn.bingoogolapple.refreshlayout.BGARefreshViewHolder;
@@ -17,7 +18,6 @@ import com.jzhu.io.gank.injection.module.GankIoModule;
 import com.jzhu.io.gank.mvp.presenter.FLPresenter;
 import com.jzhu.io.gank.mvp.view.FLView;
 import com.jzhu.io.gank.ui.adapter.FLAdapter;
-import com.jzhu.io.gank.ui.widget.RecyclerViewItemDecoration;
 
 import java.util.List;
 
@@ -36,7 +36,7 @@ public class FLFragment extends BaseMvpFragment<FLPresenter> implements FLView, 
 
     private int pageNum = 1;
 
-    private int pageRow = 20;
+    private int pageRow = 10;
 
     private boolean isSlideUp = false;
 
@@ -55,12 +55,7 @@ public class FLFragment extends BaseMvpFragment<FLPresenter> implements FLView, 
     private void initRecyclerView() {
         mAdapter = new FLAdapter(mRecyclerView);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        mRecyclerView.addItemDecoration(new RecyclerViewItemDecoration(
-                RecyclerViewItemDecoration.MODE_HORIZONTAL, getResources().getColor(R.color.transparent),
-                getResources().getDimensionPixelSize(R.dimen.common_margin),
-                0,
-                0,
-                0));
+        mRecyclerView.addItemDecoration(BGADivider.newShapeDivider().setSizeDp(getResources().getDimensionPixelSize(R.dimen.common_divider_height)).setColor(getResources().getColor(R.color.transparent),false));
         mRecyclerView.setAdapter(mAdapter);
     }
 
@@ -85,7 +80,7 @@ public class FLFragment extends BaseMvpFragment<FLPresenter> implements FLView, 
             mAdapter.addMoreData(list);
         }
         else {
-            mAdapter.setData(list);
+            mAdapter.addNewData(list);
         }
     }
 

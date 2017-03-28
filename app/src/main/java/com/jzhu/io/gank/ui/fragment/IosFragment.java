@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewGroup;
 import butterknife.BindView;
+import cn.bingoogolapple.androidcommon.adapter.BGADivider;
 import cn.bingoogolapple.androidcommon.adapter.BGAOnRVItemClickListener;
 import cn.bingoogolapple.refreshlayout.BGANormalRefreshViewHolder;
 import cn.bingoogolapple.refreshlayout.BGARefreshLayout;
@@ -21,7 +22,6 @@ import com.jzhu.io.gank.injection.module.GankIoModule;
 import com.jzhu.io.gank.mvp.presenter.IosPresenter;
 import com.jzhu.io.gank.mvp.view.IosView;
 import com.jzhu.io.gank.ui.adapter.AIAdapter;
-import com.jzhu.io.gank.ui.widget.RecyclerViewItemDecoration;
 
 import java.util.List;
 
@@ -60,12 +60,7 @@ public class IosFragment extends BaseMvpFragment<IosPresenter> implements IosVie
     private void initRecyclerView() {
         mAdapter = new AIAdapter(mRecyclerView);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        mRecyclerView.addItemDecoration(new RecyclerViewItemDecoration(
-                RecyclerViewItemDecoration.MODE_HORIZONTAL, getResources().getColor(R.color.transparent),
-                getResources().getDimensionPixelSize(R.dimen.common_margin),
-                0,
-                0,
-                0));
+        mRecyclerView.addItemDecoration(BGADivider.newShapeDivider().setSizeDp(getResources().getDimensionPixelSize(R.dimen.common_divider_height)).setColor(getResources().getColor(R.color.transparent), false));
         mAdapter.setOnRVItemClickListener(this);
         mRecyclerView.setAdapter(mAdapter);
     }

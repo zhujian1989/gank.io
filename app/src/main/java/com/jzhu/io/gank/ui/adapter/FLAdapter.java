@@ -8,6 +8,8 @@ import com.jzhu.io.baselibrary.utils.glide.ImageLoader;
 import com.jzhu.io.data.entities.GankFLEntities;
 import com.jzhu.io.gank.R;
 
+import java.util.List;
+
 /**
  * Created by zhujian on 2017/3/26.
  */
@@ -21,5 +23,12 @@ public class FLAdapter extends BGARecyclerViewAdapter<GankFLEntities> {
     @Override
     protected void fillData(BGAViewHolderHelper helper, int position, GankFLEntities model) {
         ImageLoader.loadStringRes(helper.getImageView(R.id.fl_image), model.getUrl(), ImageLoadConfig.parseBuilder(ImageLoader.defConfig).setAnimResId(R.anim.fade_in).build(), null);
+    }
+
+    @Override
+    public void addMoreData(List<GankFLEntities> data) {
+        int positionStart = mData.size();
+        mData.addAll(mData.size(), data);
+        notifyItemRangeInsertedWrapper(positionStart, data.size());
     }
 }

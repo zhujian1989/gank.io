@@ -20,11 +20,6 @@ public class AboutActivity extends BaseActivity {
     @BindView(R.id.about_award_intro)
     TextView mAboutAwardIntro;
 
-    @BindView(R.id.wxpay)
-    ImageView mWxpay;
-
-    @BindView(R.id.alipay)
-    ImageView mAlipay;
 
     @Override
     protected int getLayoutId() {
@@ -36,14 +31,12 @@ public class AboutActivity extends BaseActivity {
 
     }
 
-    @OnClick({ R.id.left_icon, R.id.source,R.id.hide_fun})
+    @OnClick({ R.id.left_icon, R.id.source})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.hide_fun:
                 mHideFun.setText(R.string.about_award);
                 mAboutAwardIntro.setVisibility(View.VISIBLE);
-                mWxpay.setVisibility(View.VISIBLE);
-                mAlipay.setVisibility(View.VISIBLE);
                 break;
             case R.id.left_icon:
                 finish();

@@ -2,9 +2,6 @@ package com.jzhu.io.gank.ui.activity;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
-import android.widget.TextView;
-import butterknife.BindView;
 import butterknife.OnClick;
 import com.alibaba.android.arouter.facade.annotation.Route;
 import com.alibaba.android.arouter.launcher.ARouter;
@@ -13,14 +10,7 @@ import com.jzhu.io.gank.R;
 
 @Route(path = "/about/aboutActivity")
 public class AboutActivity extends BaseActivity {
-
-    @BindView(R.id.hide_fun)
-    TextView mHideFun;
-
-    @BindView(R.id.about_award_intro)
-    TextView mAboutAwardIntro;
-
-
+    
     @Override
     protected int getLayoutId() {
         return R.layout.activity_about;
@@ -34,10 +24,6 @@ public class AboutActivity extends BaseActivity {
     @OnClick({ R.id.left_icon, R.id.source})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.hide_fun:
-                mHideFun.setText(R.string.about_award);
-                mAboutAwardIntro.setVisibility(View.VISIBLE);
-                break;
             case R.id.left_icon:
                 finish();
                 break;

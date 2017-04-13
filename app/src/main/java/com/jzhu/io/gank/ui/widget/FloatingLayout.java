@@ -1,6 +1,7 @@
 package com.jzhu.io.gank.ui.widget;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.support.v4.widget.ViewDragHelper;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -12,6 +13,12 @@ public class FloatingLayout extends RelativeLayout {
     private ViewDragHelper viewDragHelper;
 
     private boolean isCaptured;
+
+    private View dragView;
+
+    private int left;
+    private int top;
+    private boolean isFrist  = true;
 
     public FloatingLayout(Context context) {
         this(context, null);
@@ -30,6 +37,11 @@ public class FloatingLayout extends RelativeLayout {
         viewDragHelper = ViewDragHelper.create(this, 1.0f, new CustomCallback());
     }
 
+    @Override
+    protected void onFinishInflate() {
+        super.onFinishInflate();
+        dragView = getChildAt(0);
+    }
 
     private class CustomCallback extends ViewDragHelper.Callback {
 
@@ -76,6 +88,8 @@ public class FloatingLayout extends RelativeLayout {
             int rightBound = getWidth() - releasedChild.getWidth() - getPaddingRight();
             viewDragHelper.settleCapturedViewAt(releasedChild.getLeft() > (getWidth() - releasedChild.getWidth()) / 2f ? rightBound : leftBound, releasedChild.getTop());
             invalidate();
+            left = releasedChild.getLeft() > (getWidth() - releasedChild.getWidth()) / 2f ? rightBound : leftBound;
+            top = releasedChild.getTop();
             isCaptured = false;
         }
 
@@ -84,7 +98,6 @@ public class FloatingLayout extends RelativeLayout {
             super.onViewCaptured(capturedChild, activePointerId);
         }
     }
-
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
@@ -104,4 +117,19 @@ public class FloatingLayout extends RelativeLayout {
             invalidate();
     }
 
+    @Override
+    protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        super.onLayout(changed, l, t, r, b);
+        if(isFrist){
+            isFrist =false;
+            left = dragView.getLeft();
+            top = dragView.getTop();
+        }
+        dragView.layout(left, top, left + dragView.getMeasuredWidth(), top + dragView.getMeasuredHeight());
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+    }
 }

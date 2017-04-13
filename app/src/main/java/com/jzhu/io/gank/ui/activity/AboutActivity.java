@@ -10,7 +10,7 @@ import com.jzhu.io.gank.R;
 
 @Route(path = "/about/aboutActivity")
 public class AboutActivity extends BaseActivity {
-    
+
     @Override
     protected int getLayoutId() {
         return R.layout.activity_about;

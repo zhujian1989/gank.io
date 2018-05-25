@@ -41,3 +41,8 @@ QQ：370159662
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+    
+PS:如果跑代码无法跳转，请关闭InstantRun！
+    开启InstantRun之后无法跳转(高版本Gradle插件下无法跳转)？
+    因为开启InstantRun之后，很多类文件不会放在原本的dex中，需要单独去加载，ARouter默认不会去加载这些文件，因为安全原因，只有在开启了openDebug之后 ARouter才回去加载InstantRun产生的文件，所以在以上的情况下，需要在init之前调用openDebug
+

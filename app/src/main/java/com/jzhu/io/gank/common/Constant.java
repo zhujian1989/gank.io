@@ -7,5 +7,6 @@ package com.jzhu.io.gank.common;
 public interface Constant {
 
     String THUMBNAIL_END_URL_100 ="?imageView2/0/w/100";
+    String THUMBNAIL_END_URL_400 ="?imageView2/0/w/400";
 
 }

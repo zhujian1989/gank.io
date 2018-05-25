@@ -21,7 +21,7 @@ import java.util.List;
 
 public class GankAndroidAndiOSEntities {
 
-    private Long _id ;
+    private String _id ;
     private Date createAt ;
     private String desc;
     private List<String> images;
@@ -48,11 +48,11 @@ public class GankAndroidAndiOSEntities {
         this.images = images;
     }
 
-    public Long get_id() {
+    public String get_id() {
         return _id;
     }
 
-    public void set_id(Long _id) {
+    public void set_id(String _id) {
         this._id = _id;
     }
 

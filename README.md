@@ -9,7 +9,7 @@
 [点击下载 gankio.apk](http://fir.im/gzs1)
 
 ## 核心思想
-整体采取MVP架构，学习了下uncle bob的clean code思想，在项目中做了一些实践，还在不断完善中
+整体采取MVP架构，在项目中做了一些实践
 ## 使用到的主流第三方库
 dagger2  
 retrofit2  
